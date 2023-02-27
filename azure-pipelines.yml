@@ -15,8 +15,7 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- task: NuGetToolInstaller@1
-- task: HCLAppScanOnCloud@2
+- task: HCLAppScanOnCloud@2.0.6
   inputs:
     AppSecTestService: 'ASoC Feb24,2023'
     applications: 'ce6914a8-5b78-4488-bf42-5f4bd3e2d99d'
