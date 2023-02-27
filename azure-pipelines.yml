@@ -1,4 +1,10 @@
 # .NET Desktop
+- task: HCLAppScanOnCloud@2
+  inputs:
+    AppSecTestService: 'ASoC Feb24,2023'
+    applications: 'ce6914a8-5b78-4488-bf42-5f4bd3e2d99d'
+    scanname: 'Feb27_Test1'
+    scantype: 'static'
 - task: NuGetCommand@2
   inputs:
     command: 'restore'
